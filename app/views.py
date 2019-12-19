@@ -33,7 +33,6 @@ def get_data(file):
     df['ADX'] = ""
     
     row_length = df.shape[0]
-    print(row_length)
 
     #calculating all the data for the then created column
     j = 1
@@ -72,7 +71,6 @@ def get_data(file):
                 df['ADX'][j] = round((df['ADX'][j-1] * 13 + df['DX'][j]) / 14, 4)
         
         j += 1
-        print(j)
         # if i == 14:
         #     adx_counter += 1
         #     df['TR']
